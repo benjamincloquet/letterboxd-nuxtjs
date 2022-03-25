@@ -1,9 +1,9 @@
 <template>
-  <Tutorial />
+  <PopularFilms />
 </template>
 
 <script>
 export default {
   name: 'IndexPage',
-}
+};
 </script>
