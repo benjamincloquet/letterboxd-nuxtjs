@@ -10,11 +10,11 @@ export default {
     details: {
       type: Object,
       default() {
-        return { title: 'Movie' };
+        return { title: 'Movie' }
       },
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped></style>

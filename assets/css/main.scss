@@ -1,6 +1,10 @@
 @import 'normalize';
 @import 'fonts';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   font-family: 'Poppins';
 }

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import FilmCard from './FilmCard.vue';
+import FilmCard from './FilmCard.vue'
 export default {
   components: {
     FilmCard,
@@ -22,20 +22,20 @@ export default {
   data() {
     return {
       popularFilms: {},
-    };
+    }
   },
   async fetch() {
     this.popularFilms = await fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}`
     ).then(async (res) => {
-      const json = await res.json();
+      const json = await res.json()
       if (json.success === false) {
-        throw new Error(json.status_message);
+        throw new Error(json.status_message)
       }
-      return json.results;
-    });
+      return json.results
+    })
   },
-};
+}
 </script>
 
 <style lang="scss" scoped></style>
