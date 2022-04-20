@@ -9,7 +9,7 @@
       required
       class="relative z-[70] w-4 h-8 border-0 rounded-none bg-stone-700 text-stone-700 checked:bg-none cursor-pointer"
       :checked="modelValue === index / 2"
-      @input="$emit('update:modelValue', parseInt($event.target.value))"
+      @input="$emit('update:modelValue', parseFloat($event.target.value))"
     />
   </div>
 </template>

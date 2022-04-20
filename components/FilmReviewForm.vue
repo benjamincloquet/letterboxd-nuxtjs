@@ -48,7 +48,7 @@ export default {
         filmId: this.filmId,
         author: 'you',
         text: null,
-        vote: 4,
+        vote: null,
       })
     },
   },

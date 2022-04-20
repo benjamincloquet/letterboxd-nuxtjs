@@ -18,7 +18,7 @@
         </NavItems>
       </nav>
       <div class="md:hidden flex items-center">
-        <ul class="flex gap-2">
+        <ul class="flex gap-4">
           <li class="flex items-center">
             <SearchButton />
           </li>

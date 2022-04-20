@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`fixed top-0 z-40 h-full w-full bg-stone-100 dark:bg-stone-800 p-4 pt-24 transition-transform duration-700 ${
+    :class="`fixed top-0 z-40 h-full w-full bg-stone-100 dark:bg-stone-800 p-4 pt-24 transition-transform duration-300 ${
       isVisible ? '' : 'translate-x-full'
     }`"
   >

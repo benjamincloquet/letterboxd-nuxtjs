@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`fixed z-40 w-full bg-stone-100 dark:bg-stone-800 drop-shadow-lg transition-transform duration-700 ${
+    :class="`fixed z-30 w-full bg-stone-100 dark:bg-stone-800 drop-shadow-lg transition-transform duration-300 ${
       isVisible ? '' : '-translate-y-full'
     }`"
   >
@@ -9,7 +9,7 @@
         <input
           v-model="query"
           type="text"
-          class="grow rounded bg-white border border-stone-300 dark:border-stone-700 placeholder:text-stone-300 placeholder:tracking-wide"
+          class="grow rounded bg-white border border-stone-300 dark:border-stone-700 dark:text-stone-800 placeholder:text-stone-300 placeholder:tracking-wide"
           placeholder="Type a film title..."
         />
         <button

@@ -17,6 +17,10 @@
           :text="review.content"
         />
       </li>
+
+      <li v-if="reviewsToDisplay.length === 0" class="col-span-3 md:col-span-4">
+        <p>No reviews for this film yet.</p>
+      </li>
     </ul>
   </PageSection>
 </template>
