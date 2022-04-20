@@ -15,5 +15,11 @@ module.exports = {
   ],
   plugins: [],
   // add your custom rules here
-  rules: {},
+  rules: {'vue/multi-word-component-names': 'off'},
+  overrides: [
+    {
+      files: ['layouts/*', 'pages/*', 'pages/film/_filmId/*'],
+      rules: { 'vue/multi-word-component-names': 'off' },
+    },
+  ],
 }

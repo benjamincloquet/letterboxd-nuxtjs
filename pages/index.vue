@@ -1,9 +1,10 @@
 <template>
-  <PopularFilms />
+  <main>
+    <PopularFilms :is-teaser="true" />
+    <WatchlistSection :is-teaser="true" />
+  </main>
 </template>
 
 <script>
-export default {
-  name: 'IndexPage',
-}
+export default {}
 </script>

@@ -7,7 +7,15 @@ module.exports = {
     './nuxt.config.{js,ts}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Poppins'],
+      },
+      screens: {
+        mdl: '896px',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
+  darkMode: 'class',
 }

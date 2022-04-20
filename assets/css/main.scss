@@ -6,9 +6,24 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Poppins';
+  font-family: 'PT Serif';
 }
 
 body {
   overflow-x: hidden;
+
+  @apply bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 transition-colors;
+}
+
+.subtitle {
+  @apply font-sans font-extralight uppercase tracking-wider;
+}
+
+.text-clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+          line-clamp: 4; 
+  -webkit-box-orient: vertical;
 }

@@ -25,7 +25,7 @@ export default {
   css: ['@/assets/css/main'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '@/plugins/api.js' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,10 +35,11 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxt/postcss8',
+    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxt/http'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -48,5 +49,9 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+
+  env: {
+    tmdbAPIKey: process.env.TMDB_API_KEY,
   },
 }
