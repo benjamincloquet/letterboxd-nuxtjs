@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  ssr: false,
   async asyncData({ params, $api, error }) {
     try {
       const person = await $api.tmdb.get(`/person/${params.id}`)
