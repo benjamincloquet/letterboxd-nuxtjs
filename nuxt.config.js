@@ -34,7 +34,22 @@ export default {
       {
         rel: 'preload',
         as: 'font',
-        href: '@/assets/fonts/poppins-v19-latin/poppins-v19-latin-700.woff',
+        href: './_nuxt/fonts/poppins-v19-latin/poppins-v19-latin-200.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        href: './_nuxt/fonts/poppins-v19-latin/poppins-v19-latin-700.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        href: './_nuxt/fonts/poppins-v19-latin/poppins-v19-latin-regular.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        href: './_nuxt/fonts/pt-serif-v16-latin/pt-serif-v16-latin-regular.woff',
       },
     ],
   },
