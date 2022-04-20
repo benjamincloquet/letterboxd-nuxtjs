@@ -15,8 +15,8 @@
       <SVGLogo
         v-for="index in maxVote"
         :key="index"
-        class="stroke-stone-700 fill-stone-100 dark:stroke-stone-100 dark:fill-stone-800 w-8"
-        name="star"
+        class="stroke-stone-700 fill-stone-100 dark:stroke-stone-100 dark:fill-stone-800"
+        name="star-big"
       />
     </div>
   </div>
@@ -52,7 +52,7 @@ input[type='radio'] {
   }
 
   &:hover ~ & {
-    background-color: theme('colors.stone.400');
+    background-color: transparent;
 
     .dark & {
       background-color: theme('colors.stone.600');
@@ -60,7 +60,7 @@ input[type='radio'] {
   }
 }
 .container:not(:hover) > input:checked ~ input {
-  background-color: theme('colors.stone.400');
+  background-color: transparent;
 
   .dark & {
     background-color: theme('colors.stone.600');
