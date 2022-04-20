@@ -11,6 +11,14 @@
       :checked="modelValue === index / 2"
       @input="$emit('update:modelValue', parseFloat($event.target.value))"
     />
+    <div class="absolute top-0 left-0 h-full flex overflow-hidden">
+      <SVGLogo
+        v-for="index in maxVote"
+        :key="index"
+        class="stroke-stone-700 fill-stone-100 dark:stroke-stone-100 dark:fill-stone-800 w-8"
+        name="star"
+      />
+    </div>
   </div>
 </template>
 
@@ -57,5 +65,8 @@ input[type='radio'] {
   .dark & {
     background-color: theme('colors.stone.600');
   }
+}
+.icon {
+  transform: scale(1.2);
 }
 </style>
