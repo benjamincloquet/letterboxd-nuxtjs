@@ -1,5 +1,5 @@
 <template>
-  <img v-if="src" :src="src" :alt="alt" loading="lazy" />
+  <img v-if="src" :src="src" :alt="alt" />
 </template>
 
 <script>

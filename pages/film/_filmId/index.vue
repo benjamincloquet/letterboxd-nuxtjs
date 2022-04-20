@@ -7,6 +7,8 @@
 
 <script>
 export default {
+  target: 'server',
+  ssr: 'true',
   async asyncData({ params, $api, error }) {
     try {
       const filmDetails = await $api.tmdb.get(`/movie/${params.filmId}`)

@@ -22,7 +22,6 @@
   <img
     v-else-if="path"
     :src="`https://image.tmdb.org/t/p/original${path}`"
-    loading="lazy"
     :alt="alt"
   />
 </template>
